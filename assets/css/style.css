@@ -193,17 +193,22 @@ nav ul li:hover{
     color: red;
     font-size: 40px;
 }
-
+.project:hover{
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+}
 .project{
     box-sizing: border-box;
     align-items: center;
   width: 325px;
   padding: 20px;
+  margin: 5px;
   border: solid 5px gainsboro;
 }
 .project img{
     height: 250px;
     width: 250px;
+    border-radius: 10px;
 }
 
 .titlee{
@@ -218,5 +223,14 @@ nav ul li:hover{
     flex-direction: row;
     word-wrap: wrap;
     box-sizing: border-box;
+    padding-left: 150px;
 
 } 
+.subtext div{
+    opacity: 0.8;
+}
+.subtext div:hover{
+    padding: 15px;
+    opacity: 1;
+    transition: 0.6s ease-in-out;
+}
