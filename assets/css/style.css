@@ -1,0 +1,222 @@
+:root{
+    font-family: sans-serif;
+    min-height: 100vh;
+    max-width: 1280px; 
+    background-color: rgb(25, 216, 216);
+    margin: 0 auto;
+     
+}
+body{
+    margin: 0px !important;
+    border: 1px solid rgb(233, 219, 219);
+    background-color: white;
+}
+
+
+
+
+nav{
+    background-color: #222222;
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav .logo{
+   display: flex;
+    align-items: center;
+}
+
+nav .logo img{
+    
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    border-radius: 50%;
+    
+    
+}
+nav .logo .title{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 20px;
+    
+}
+
+nav ul{
+    
+   
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+nav ul li{
+    padding: 22px 30px;
+    background-color: #333333;
+    
+}
+
+nav ul li.active{
+   background-color: #22222222;
+    text-transform: uppercase;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+nav ul li:hover{
+    background-color: #22222222;
+}
+@media all and (max-width:800px){
+    nav{
+        justify-content: flex-start;
+    }
+    nav ul{
+        align-items: stretch;
+        justify-content: space-between;
+    }
+}
+@media all and (max-width:600px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul{
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+        
+    }
+}
+
+.banner{
+    height: 450px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-size: cover;
+    background-image: url(//unsplash.it/900/450/?blur);
+    background-color: #333333;
+    text-align: center;
+   
+}
+@keyframes appear {
+    from{
+        opacity: 0.0;
+        top: -100px;
+    }
+    to{
+        opacity: 1;
+        top: 0.0;
+    }
+    
+}
+.banner .heading{
+    position: relative;
+    flex: 1;
+    justify-self: center;
+    color: white;
+    font-size: 3em;
+    animation: appear 1s ease-in-out forwards;
+}
+.banner .heading small{
+    font-size: 24px;
+}
+
+
+
+.footer{
+    text-align: center;
+    color: white;
+    background-color:#222222;
+    position:fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    
+    padding: 10px;
+}
+.maintext{
+    font-size: 12px;
+    padding: 18px;
+}
+.subtext{
+    display: flex;
+    
+}
+.subtext div{
+    color: white;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.container{
+    margin-bottom: 70px;
+}
+.red{
+    background-color: rgb(166, 70, 29);
+}
+
+.Yellow{
+    background-color: rgb(218, 183, 9);
+}
+.Green{
+    background-color: rgb(13, 203, 153);
+}
+
+.quote{
+    padding: 50px;
+    text-align: center;
+    background-color: #eeeeee;
+    
+}
+.quote::before{
+    display: inline-block;
+    content: open-quote;
+    color: red;
+    font-size: 40px;
+}
+.quote::after{
+    display: inline-block;
+    content: close-quote;
+    color: red;
+    font-size: 40px;
+}
+
+.project{
+    box-sizing: border-box;
+    align-items: center;
+  width: 325px;
+  padding: 20px;
+  border: solid 5px gainsboro;
+}
+.project img{
+    height: 250px;
+    width: 250px;
+}
+
+.titlee{
+    padding: 10px;
+    font-size: 20px;
+    border-top: solid 5px gainsboro;
+    border-bottom: solid 5px gainsboro;
+}  
+.projects{
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    word-wrap: wrap;
+    box-sizing: border-box;
+
+} 
